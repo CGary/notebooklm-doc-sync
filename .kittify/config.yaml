@@ -1,0 +1,6 @@
+vcs:
+  type: git
+agents:
+  available:
+  - gemini
+  auto_commit: true
