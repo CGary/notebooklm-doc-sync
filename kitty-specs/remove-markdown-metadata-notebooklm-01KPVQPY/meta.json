@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-04-22T23:16:55.767396+00:00",
+  "friendly_name": "remove markdown metadata notebooklm",
+  "mission_id": "01KPVQPYAA4B0VD3WFSHSCB558",
+  "mission_number": null,
+  "mission_slug": "remove-markdown-metadata-notebooklm-01KPVQPY",
+  "mission_type": "software-dev",
+  "slug": "remove-markdown-metadata-notebooklm-01KPVQPY",
+  "target_branch": "main"
+}
