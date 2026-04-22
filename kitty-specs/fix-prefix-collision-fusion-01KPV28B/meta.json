@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-04-22T17:01:57.970429+00:00",
+  "friendly_name": "fix prefix collision fusion",
+  "mission_id": "01KPV28BT80159C5QQ15NMM1JG",
+  "mission_number": null,
+  "mission_slug": "fix-prefix-collision-fusion-01KPV28B",
+  "mission_type": "software-dev",
+  "slug": "fix-prefix-collision-fusion-01KPV28B",
+  "target_branch": "main"
+}
