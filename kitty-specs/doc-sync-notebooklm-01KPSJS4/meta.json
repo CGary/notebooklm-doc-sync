@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-04-22T03:12:16.127412+00:00",
+  "friendly_name": "doc sync notebooklm",
+  "mission_id": "01KPSJS4QQ51Y63X34Q925KMMH",
+  "mission_number": null,
+  "mission_slug": "doc-sync-notebooklm-01KPSJS4",
+  "mission_type": "software-dev",
+  "slug": "doc-sync-notebooklm-01KPSJS4",
+  "target_branch": "main"
+}
