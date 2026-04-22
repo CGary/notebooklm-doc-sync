@@ -26,3 +26,10 @@
 .kittify/missions/__pycache__/
 .kittify/runtime/
 .kittify/workspaces/
+cache/
+output/
+*.pyccache/
+output/
+*.pyc
+__pycache__/
+*.db
