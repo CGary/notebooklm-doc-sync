@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-04-22T14:34:30.459229+00:00",
+  "friendly_name": "fix table extraction markdownify",
+  "mission_id": "01KPTSTBNGK69FJCFYG0QT1HBA",
+  "mission_number": null,
+  "mission_slug": "fix-table-extraction-markdownify-01KPTSTB",
+  "mission_type": "software-dev",
+  "slug": "fix-table-extraction-markdownify-01KPTSTB",
+  "target_branch": "main"
+}
