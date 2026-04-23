@@ -4,3 +4,8 @@ agents:
   available:
   - gemini
   auto_commit: true
+project:
+  uuid: ba793025-0c8f-47da-a0c8-a78f5a7754a4
+  slug: notebooklm-doc-sync
+  node_id: b7c77a915371
+  build_id: 59c298ce-4681-40d3-a653-3e15385c4fb4

@@ -142,10 +142,11 @@ Given the HTML body, the system applies a readability extractor (`trafilatura` i
 
 The extractor must:
 
-- Identify the main content region (`<main>`, `<article>`, `role="main"`, or density-based heuristics).
-- Strip navigation, sidebars, breadcrumbs, footers, and scripts.
-- Preserve heading hierarchy, ordered/unordered lists, code blocks, and tables.
-- Convert the cleaned HTML to Markdown.
+- Strip navigation, sidebars, breadcrumbs, footers, and scripts using `selectolax`.
+- Preserve heading hierarchy, ordered/unordered lists, code blocks, and tables using `markdownify` in GFM mode.
+- Post-process the Markdown using regular expressions to:
+    - **Eradicate Images**: Remove all `![alt](url)` patterns.
+    - **Flatten Links**: Replace `[text](url)` with `text` to save tokens.
 - Emit a **confidence score** in the range `[0.0, 1.0]`.
 
 A domain-specific **selector hint** (CSS selector, optional) can be stored per domain to help the extractor when readability alone underperforms. This is a simpler version of the original spec's "recipes" and is restricted to:
@@ -827,8 +828,9 @@ Integration with external alerting (email, Slack, etc.) is left to the operator'
 ### 16.1 Language and core libraries (Python)
 
 - `httpx` — HTTP client with HTTP/2 and per-host connection pooling.
-- `trafilatura` — primary readability extractor (best Markdown output in benchmarks).
-- `selectolax` or `lxml` — for applying `include` / `exclude` CSS selectors before extraction.
+- `trafilatura` — used for main content discovery and clean HTML extraction.
+- `markdownify` — primary Markdown renderer for high-fidelity tables (GFM).
+- `selectolax` — high-performance DOM manipulation for pre-extraction cleaning.
 - `sqlite3` (stdlib) with WAL mode — persistence.
 - `pyyaml` — project config.
 - `urllib.robotparser` (stdlib) — robots.txt.
